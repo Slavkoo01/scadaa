@@ -1,0 +1,31 @@
+prvo idemo u EGUConverter.cs dole i popunjavamo 2 metode u njemu, iz prve
+metode se moze deduktivnim postupkom matematicke analize utvrditi kako
+ide formula za rawValue u drugoj metodi 
+
+onda u ProcessingManager.cs menjamo metodu ExecuteAnalogCommand, tu cemo 
+dodati ushort rawValue i onda cemo njega proslediti u liniji ispod
+
+onda dopunjujemo metodu ProcessingDigitalPoint i metodu 
+ProcessingAnalogPoint, 
+
+onda idemo u fajl ConfigItem.cs i tamo cemo da konstruktor da dopunimo
+sa dva nova if-a, za [10] i [11]
+
+onda u rtu cfg dodamo 2 nove kolone, u poslednjoj udarimo # #
+
+onda idemo u AlarmProcessor i tu menjamo obe metode, u prvoj return ne 
+diramo, samo ga spustimo dole i iznad pisemo if-else, druga metoda
+isto samo je dosta kraca
+
+onda u ProcessingManager.cs menjamo metodu ProcessingDigitalPoint, tu cemo
+da dodamo 1 liniju koda isto 1 liniju dodamo i u metodu ispod koja se 
+naziva ProcessingAnalogPoint OVO JE VEC ODRADJENO, PREDPOSTAVLJAM DA 
+SE TO RADI PARCIJALNO, PRVO SE MALO DOPUNI PRVI PUT GORE PA SE OVDE 
+DOPUNI DO KRAJA, ALI NEMA POTREBE NEGO SE SAMO MZOE NA POCETKU 
+SKROZ ZGOVNITI I VOZDRA
+
+onda u ConfigItem dodajemo 5 novih if else-ova i ne zaboravimo da 
+na [14] tj abnormalnValue castujemo doubleTemp u ushort
+
+onda idemo u rtuCfg i tu dodajemo ove kolone koje smo dodali u onom
+retardu configItemu

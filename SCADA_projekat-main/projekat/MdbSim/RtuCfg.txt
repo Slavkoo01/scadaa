@@ -1,0 +1,7 @@
+STA 123
+TCP 54558
+
+HR_INT  4 2000  0  0      10    5  AO  @NapajMotor 4
+IN_REG  1 4400  0  0     100   90  AI  @KapacBater 4 
+IN_REG  2 4401  0  0      20    5  AI  @SenzUdalj  4
+DO_REG  1 3100  0  0       1    1  DO  @UkljucIsk  2   
